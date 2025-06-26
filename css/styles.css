@@ -20,13 +20,19 @@ img {
   display: block;
 }
 
+svg {
+  width: 64px;
+  height: 64px;
+}
+
 a {
   text-decoration: none;
   color: #434455;
 }
 
 .page-top {
-  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -78,9 +84,10 @@ a {
 }
 
 .main-menu-item {
-  color: #2e2f42;
+  position: relative;
+  color: #404bbf;
   padding: 24px 0;
-  transition: color 150ms ease-in-out;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-menu-item:hover,
@@ -88,12 +95,15 @@ a {
   color: #404bbf;
 }
 
-.main-menu-item:active::after {
-  display: block;
+.main-menu-item::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
   content: "";
   width: 100%;
   height: 4px;
   background-color: #404bbf;
+  border-radius: 2px;
 }
 
 address {
@@ -110,7 +120,10 @@ address {
   gap: 40px;
   white-space: nowrap;
   padding: 24px 0;
-  transition: color 150ms ease-in-out;
+}
+
+.contacts-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item:hover,
@@ -119,6 +132,7 @@ address {
 }
 
 .main-action {
+  width: 1440px;
   padding: 188px 0;
   background-image: linear-gradient(
       to bottom,
@@ -127,7 +141,7 @@ address {
     ),
     url(/images/hero-background.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -157,7 +171,7 @@ address {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
-  transition: color 150ms ease-in-out;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-action-btn:hover,
@@ -206,12 +220,15 @@ address {
 
 .standarts-list-item-icon-box {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   padding: 0;
+  margin-bottom: 8px;
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
-  box-shadow: inset 0 0 0 1px #8e8f99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 
@@ -274,6 +291,8 @@ address {
   background-color: #ffffff;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-member-info {
@@ -290,6 +309,7 @@ address {
 }
 
 .team-members-socials {
+  justify-content: center;
   display: flex;
   gap: 24px;
 }
@@ -301,6 +321,11 @@ address {
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
+}
+
+.team-members-socials-item-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .portfolio {
