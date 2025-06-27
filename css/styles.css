@@ -4,7 +4,13 @@ body {
   background-color: #ffffff;
 }
 
-h1 h2 h3 h4 h5 h6 p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -410,6 +416,7 @@ address {
 .footer-flex-container {
   display: flex;
   align-items: baseline;
+  margin: 0 auto;
 }
 
 .footer-logo-text-box {
