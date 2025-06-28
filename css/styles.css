@@ -26,11 +26,6 @@ img {
   display: block;
 }
 
-svg {
-  width: 64px;
-  height: 64px;
-}
-
 a {
   text-decoration: none;
   color: #434455;
@@ -354,8 +349,6 @@ address {
 }
 
 .team-members-socials-item-icon {
-  width: 16px;
-  height: 16px;
   fill: #f4f4fd;
 }
 
@@ -423,11 +416,10 @@ address {
 .footer-flex-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 
 .footer-logo-text-box {
-  padding-left: 480px;
+  margin-right: 120px;
 }
 
 .footer-logo {
