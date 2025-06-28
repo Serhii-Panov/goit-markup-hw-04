@@ -103,7 +103,7 @@ a {
   position: relative;
 }
 
-.main-menu-item.current::before {
+.main-menu-item.current::after {
   position: absolute;
   left: 0;
   bottom: -1px;
